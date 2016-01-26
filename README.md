@@ -17,7 +17,7 @@ This will start the job and return its PID. Cluster will auto-detect if the loca
 
 ## Job Monitoring
 ```cluster-ls``` lists your active jobs.  
-```cluster-ls -a``` lists all active jobs.  
+```cluster-ls -a``` lists active jobs of all users.  
 
 ## Job Removal
 ```cluster-rm PID``` Removes job with specified PID.  
