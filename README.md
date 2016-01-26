@@ -9,7 +9,7 @@ pip install --user .
 ```
 
 ### Job Submission
-To submit a job, simply prepend cluster:
+To submit a job, simply prepend `cluster`:
 ```
 cluster ./my_executable -my_arg
 ```
