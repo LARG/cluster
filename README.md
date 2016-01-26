@@ -11,14 +11,16 @@ pip install --user .
 ## Job Submission
 To submit a job, simply prepend cluster:
 ```
-$> cluster ./my_executable -my_arg
+cluster ./my_executable -my_arg
 ```
-This will start the job and return its PID. Cluster will auto-detect if the local machine is a Condor or Slurm submit node, and if so, will submit the job to Condor/Slurm. Otherwise it will run the job locally.
+This will start the job and return its PID. Cluster will auto-detect if the local machine is a Condor or Slurm submit node, and if so, will submit the job to Condor/Slurm. Otherwise it will run the job locally.  
+
+Cluster supports several options for specifying job requirements and logging. To see the full list of options run `cluster` without any arguments.
 
 ## Job Monitoring
-```$> cluster-ls``` lists your active jobs.  
-```$> cluster-ls -a``` lists all active jobs.  
+```cluster-ls``` lists your active jobs.  
+```cluster-ls -a``` lists all active jobs.  
 
 ## Job Removal
-```$> cluster-rm PID``` Removes job with specified PID.  
-```$> clister-rm -a``` Removes all of your jobs.
+```cluster-rm PID``` Removes job with specified PID.  
+```clister-rm -a``` Removes all of your jobs.
