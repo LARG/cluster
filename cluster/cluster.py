@@ -142,7 +142,7 @@ class CondorJob(Job):
 
   def submit(self):
     '''Submit the job to Condor.'''
-    f = open('condor_submit','w') #tempfile.NamedTemporaryFile()
+    f = tempfile.NamedTemporaryFile() #open('condor_submit','w')
     f.write('+Group = \"'+self.group+'\"\n')
     f.write('+Project = \"'+self.project+'\"\n')
     f.write('+ProjectDescription = \"'+self.description+'\"\n')
